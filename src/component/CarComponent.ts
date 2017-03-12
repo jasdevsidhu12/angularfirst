@@ -17,7 +17,6 @@ import { PassModelComponent } from './PassModelComponent';
                 The total vechiles I like is {{vechiles.length}}
               </div>
               <div>
-                where the feck it is
                 <pass-model [name]="name"></pass-model>
               </div>`
 })

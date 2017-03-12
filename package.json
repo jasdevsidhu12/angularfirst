@@ -4,6 +4,7 @@
   "description": "First try for a angular 2.0 application",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prebuild": "eslint ./src",
     "build": "webpack",
@@ -22,6 +23,7 @@
   },
   "devDependencies": {
     "@angular/forms": "^2.4.8",
+    "@angular/http": "^2.4.9",
     "angular2-template-loader": "^0.6.0",
     "awesome-typescript-loader": "^3.0.0-beta.18",
     "eslint": "^3.15.0",
