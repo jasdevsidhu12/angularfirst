@@ -7,8 +7,19 @@ import { CarComponent } from './CarComponent';
               {{ displayDom() }}
               <div [style.color]='color'>Name is {{app.name}}</div>
               <br />
-              <h2 [ngClass]="{active: true}">The following are my favourite cars</h2>
-              <car></car>`
+              What do you want to see,
+              <a  href="" [routerLink]="['/car']" target="_blank">
+                Cars
+              </a> or
+              <a href="" [routerLink]="['/language']" target="_blank">
+                Programing Languages
+              </a>
+              <main>
+                <section>
+                  <router-outlet></router-outlet>
+                </section>
+              </main>
+            `
 })
 export class AppComponent {
   app = { title: 'Minimal NgModule', name: 'Jasdev'};

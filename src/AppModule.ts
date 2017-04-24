@@ -3,15 +3,19 @@ import { FormsModule }   from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './component/AppComponent';
-import { CarComponent } from './component/CarComponent';
 import { PassModelComponent } from './component/PassModelComponent';
 import { PlaneComponent } from './component/plane/PlaneComponent';
 import { MyVehicleComponent } from './component/MyVehicleComponent';
 import { VechileService } from './service/VechicleService';
 
+// other module
+import { SchoolMainModule } from './school/SchoolMainModule';
+// import router
+import { AppRoutingModule, routableComponents } from './AppRoutingModule';
+
 @NgModule({
-  imports: [BrowserModule, FormsModule, HttpModule],
-  declarations: [AppComponent, CarComponent, PassModelComponent, MyVehicleComponent, PlaneComponent],
+  imports: [BrowserModule, FormsModule, HttpModule, AppRoutingModule, SchoolMainModule],
+  declarations: [AppComponent, PassModelComponent, MyVehicleComponent, PlaneComponent, routableComponents],
   providers: [VechileService],
   bootstrap: [AppComponent]
 })
