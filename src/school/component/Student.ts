@@ -6,7 +6,5 @@ import { Component } from '@angular/core';
 })
 
 export class Student {
-  constructor(private name: String) {
-    name = 'Jasdev';
-  }
+  name = 'Jasdev';
 }

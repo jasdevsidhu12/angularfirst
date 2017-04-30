@@ -8,11 +8,15 @@ import { CarComponent } from './CarComponent';
               <div [style.color]='color'>Name is {{app.name}}</div>
               <br />
               What do you want to see,
-              <a  href="" [routerLink]="['/car']" target="_blank">
+              <a  href="" [routerLink]="['car']">
                 Cars
               </a> or
-              <a href="" [routerLink]="['/language']" target="_blank">
+              <a href="" [routerLink]="['language']">
                 Programing Languages
+              </a>
+              or
+              <a href="" [routerLink]="['student']">
+                School Own Module
               </a>
               <main>
                 <section>

@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { FavouriteLanguage } from './component/FavouriteLanguage';
 import { CarComponent } from './component/CarComponent';
 const routes: Routes = [
-  {path: '', pathMatch: 'full', redirectTo: 'language'},
+  /* {path: '', pathMatch: 'full', redirectTo: 'language'},*/
   {path: 'language', component: FavouriteLanguage },
   { path: 'car', component: CarComponent }
 ];
